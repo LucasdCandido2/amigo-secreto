@@ -78,7 +78,7 @@ $(document).ready(function() {
     const templateParams = {
       giver_name: giver.name,
       receiver_name: receiver.name,
-      giver_email: giver.email,
+      giver_email: receiver.email, // Envia para o e-mail do destinatário (quem foi sorteado)
     };
 
     emailjs.send(serviceID, templateID, templateParams)
